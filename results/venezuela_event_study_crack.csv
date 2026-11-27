@@ -1,0 +1,10 @@
+model,r2,crack_beta_pct_per_usd,window,days,abnormal_pct,placebo_p
+XLE+crack,0.598,0.191,Jan 5,1,5.61,0.004
+XLE+crack,0.598,0.191,Jan 5-9,5,8.24,0.004
+XLE+crack,0.598,0.191,Jan 5-28,17,-2.2,0.744
+pair+crack,0.812,-0.011,Jan 5,1,3.56,0.0
+pair+crack,0.812,-0.011,Jan 5-9,5,4.72,0.033
+pair+crack,0.812,-0.011,Jan 5-28,17,4.56,0.251
+XLE+pair+crack,0.82,0.001,Jan 5,1,3.63,0.0
+XLE+pair+crack,0.82,0.001,Jan 5-9,5,5.03,0.021
+XLE+pair+crack,0.82,0.001,Jan 5-28,17,3.09,0.423
