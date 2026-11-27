@@ -1,0 +1,204 @@
+
+=== 46 -> 46A
+  - 46
+  + 46A
+  - person
+  + person, excluding payments for local taxes, permits, or fees,
+  - 
+  + (e) Effective February 10, 2026, General License No. 46, dated January 29, 2026, is replaced and superseded in its entirety by this General License No. 46A.
+  - 46.
+  + 46A.
+
+=== 46A -> 46B
+  - 46A
+  + 46B
+  - 
+  + or Petrochemical Products
+  - 
+  + or of Venezuelan-origin petrochemical products for importation into the United States,
+  - 
+  + Note 3 to Paragraph (a). For purposes of this general license, the term ``petrochemical products'' includes fertilizer products and fertilizer precursor chemicals, including the [[Page 24721]] chemicals listed in the Annex of this general license.
+  - February 10,
+  + March 13,
+  - 46,
+  + 46A,
+  - January 29,
+  + February 10,
+  - 46A.
+  + 46B.
+  - 46A.
+  + 46B.
+
+=== 46B -> 46C
+  - 46B
+  + 46C
+  - specify
+  + shall require
+  - 
+  + (i) the terms of the contract be construed and interpreted in accordance with
+  - the United States
+  + a state
+  - any
+  + other
+  - govern the contract
+  + 
+  - that any
+  + (ii)
+  - under
+  + proceedings relating to
+  - States;
+  + States, the United Kingdom, France, or Singapore;
+  - 
+  + [[Page 61776]]
+  - [[Page 24721]]
+  + 
+  - 
+  + Note 4 to Paragraph (a). The requirement in paragraph (a)(1)(i) permits the inclusion of contract terms that recognize that certain aspects of the underlying activity in Venezuela may be subject to applicable Venezuelan law and regulations, including laws and regulations governing the exercise of Ve
+  - March 13,
+  + June 10,
+  - 46A,
+  + 46B,
+  - February 10,
+  + March 13,
+  - 46B.
+  + 46C.
+  - 46B.
+  + 46C.
+
+=== 46C -> 46D
+  - 46C
+  + 46D
+  - (i) the terms of the contract be construed and interpreted in accordance with the laws of a state or other jurisdiction within the United States and (ii)
+  + 
+  - [[Page 61776]]
+  + 
+  - Note 4 to Paragraph (a). The requirement in paragraph (a)(1)(i) permits the inclusion of contract terms that recognize that certain aspects of the underlying activity in Venezuela may be subject to applicable Venezuelan law and regulations, including laws and regulations governing the exercise of Ve
+  + 
+  - 
+  + [[Page 61765]]
+  - June 10,
+  + August 27,
+  - 46B,
+  + 46C,
+  - March 13,
+  + June 10,
+  - 46C.
+  + 46D.
+  - 46C.
+  + 46D.
+
+=== 50 -> 50A
+  - 50
+  + 50A
+  - 
+  + [[Page 57792]]
+  - 
+  + (e) Effective February 18, 2026, General License No. 50, dated February 13, 2026, is replaced and superseded in its entirety by this General License No. 50A.
+  - 50.
+  + 50A.
+  - [[Page 24719]]
+  + 
+
+=== 50A -> 50B
+  - 50A
+  + 50B
+  - specify
+  + shall require
+  - 
+  + (i) the terms of the contract be construed and interpreted in accordance with
+  - the United States
+  + a state
+  - any [[Page 57792]]
+  + other
+  - govern the contract
+  + 
+  - that any
+  + (ii)
+  - under
+  + proceedings relating to
+  - States;
+  + States, the United Kingdom, France, or Singapore;
+  - 
+  + Note 2 to Paragraph (a). The requirement in paragraph (a)(1)(i) permits the inclusion of contract terms that recognize that certain aspects of the underlying activity in Venezuela may be subject to applicable Venezuelan law and regulations, including laws and regulations governing the exercise of Ve
+  - February 18,
+  + June 10,
+  - 50,
+  + 50A,
+  - 13,
+  + 18,
+  - 50A.
+  + 50B.
+  - 50A.
+  + 50B.
+
+=== 50B -> 50C
+  - 50B
+  + 50C
+  - (i) the terms of the contract be construed and interpreted in accordance with the laws of a state or other jurisdiction within the United States and (ii)
+  + 
+  - Note 2 to Paragraph (a). The requirement in paragraph (a)(1)(i) permits the inclusion of contract terms that recognize that certain aspects of the underlying activity in Venezuela may be subject to applicable Venezuelan law and regulations, including laws and regulations governing the exercise of Ve
+  + 
+  - 
+  + [[Page 61768]]
+  - June 10,
+  + August 27,
+  - 50A,
+  + 50B,
+  - February 18,
+  + June 10,
+  - 50B.
+  + 50C.
+  - 50B.
+  + 50C.
+
+=== 52 -> 52A
+  - 52
+  + 52A
+  - specify
+  + shall require
+  - 
+  + (i) the terms of the contract be construed and interpreted in accordance with
+  - the United States
+  + a state
+  - any
+  + other
+  - govern the contract
+  + 
+  - that any
+  + (ii)
+  - under
+  + proceedings relating to
+  - States;
+  + States, the United Kingdom, France, or Singapore;
+  - 
+  + Note 2 to Paragraph (a). The requirement in paragraph (a)(1)(i) permits the inclusion of contract terms that recognize that certain aspects of the underlying activity in Venezuela may be subject to applicable Venezuelan law and regulations, including laws and regulations governing the exercise of Ve
+  - 
+  + [[Page 61781]]
+  - [[Page 61772]]
+  + 
+  - 
+  + (f) Effective June 10, 2026, General License No. 52, dated March 18, 2026, is replaced and superseded in its entirety by this General License No. 52A.
+  - 52.
+  + 52A.
+
+=== 52A -> 52B
+  - 52A
+  + 52B
+  - 
+  + [[Page 61769]]
+  - (i) the terms of the contract be construed and interpreted in accordance with the laws of a state or other jurisdiction within the United States and (ii)
+  + 
+  - Note 2 to Paragraph (a). The requirement in paragraph (a)(1)(i) permits the inclusion of contract terms that recognize that certain aspects of the underlying activity in Venezuela may be subject to applicable Venezuelan law and regulations, including laws and regulations governing the exercise of Ve
+  + 
+  - [[Page 61781]]
+  + 
+  - June 10,
+  + August 27,
+  - 52,
+  + 52A,
+  - March 18,
+  + June 10,
+  - 52A.
+  + 52B.
+  - 52A.
+  + 52B.
