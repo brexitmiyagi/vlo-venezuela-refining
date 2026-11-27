@@ -1,6 +1,6 @@
 # vlo-venezuela-refining
 
-This is the data and code behind my Seeking Alpha piece on Valero (VLO), written November 27, 2026. The call is a HOLD, $337.00 base value, $335.63 probability-weighted, against $323.00 on November 25. The piece argues that Valero's biggest new crude supply, Venezuelan barrels, runs on Treasury licences that keep getting rewritten, and that the stock itself is priced almost exactly on the 2028 refining crack.
+This is the data and code behind my Seeking Alpha piece on Valero (VLO), written November 27, 2026. The call is a HOLD, $337.00 base value, $335.63 probability-weighted, against $323.00 on November 25. The piece argues that the stock is priced almost exactly on the 2028 refining crack, and that Venezuelan crude, Valero's biggest new supply, runs on Treasury licences that keep getting rewritten but would cost little to lose.
 
 Everything here runs on public data. If you think a number is wrong, rerun the script and tell me.
 
@@ -37,10 +37,15 @@ Venezuela and Kuwait
 - venezuela_event_study.py, venezuela_event_study_crack.py, prices.py: the market reaction after January 3, with placebo windows. The second script is the one in the piece.
 - kuwait_test.py: EIA's Persian Gulf landed cost against Brent.
 - kuwait_quality_adjusted.py: Kuwait's August cargoes against what their gravity and sulfur say they should cost ($8.01 cheap; Saudi $0.75).
+- product_balance.py: distillate and gasoline stocks against the five-year range, and product exports. Distillate stocks on November 20 were the lowest for that week since 1982.
+- strip_noise_and_hedge.py: how much the 2028 strip moved day to day from November 19 to 25 (average $0.54), the one-week check of the hedge ratio (the stock moved 71% of what the model said), 2028 futures liquidity, and the basis a NY Harbor hedge can't cover.
 - crack_cycles.py: annual NY Harbor 2-1-1 since 2007 and what happened the year after peaks. After top-quarter years the next-year change averaged -$6.78 (-16%); the curve has 2028 $9.50 (21%) below 2027.
 - licence_history.py: compares every version of Treasury's general licences 46, 50 and 52 word by word, using the Federal Register text. My reading of each change is in data/ofac_licence_history.csv: nine of eleven rewrites loosened the terms, none tightened the crude trade.
 - peer_heavy_exposure.py: imported heavy crude by refiner and what a $1 wider heavy discount is worth per share (Valero 0.11% of its price, PBF 0.77%).
-- canada_substitute.py: Canadian crude reaching Gulf Coast refineries (down from about 526,000 b/d in 2024 to 329,000 in 2026) and seaborne Canadian entries at Gulf ports.
+- canada_substitute.py: Canadian crude reaching Gulf Coast refineries by month, and Canadian entries at Gulf customs districts.
+- canada_tmx.py: splits that Canadian crude by where it entered the US. The whole drop since 2024 is pipeline barrels from the northern border (366,000 to 95,000 b/d). 129,000 went by 2025, which is Trans Mountain; 142,000 went in 2026 as Venezuelan crude arrived, and that part could come back.
+- sanctions_2019.py: the 2019 natural experiment. Venezuelan imports went from 505,000 b/d in 2018 to nothing by mid-2019, and Valero's Brent less Maya went from $4.76 to an average $5.57. Also the 2025-26 Maya discount against Venezuelan barrels, and the $2.28 a share cost if Maya went back to its 2025 average.
+- gulf_heavy_supply.py: Venezuelan, Mexican and Canadian pipeline crude into Gulf Coast refineries by year. Mexico fell from 626,000 b/d in 2023 to 246,000 in 2026.
 - segments_detail.py: Diamond Green Diesel and ethanol. The margins the model implies ($1.30 and $0.77 a gallon), and what $0.10 a gallon is worth ($0.17 and $0.48 a share).
 - census_all_origins.py, census_crude_by_district.py: the Census customs pulls. These need your own Census API key in data/census_key.txt. The key is free from the Census Bureau. Mine isn't in here.
 - valero_heavy_crude_tracker.py: the monthly plant table. Rerun it after each EIA release.
@@ -52,6 +57,7 @@ Venezuela and Kuwait
 - EIA landed costs by origin: https://www.eia.gov/dnav/pet/pet_pri_land1_k_m.htm
 - EIA spot and NYMEX futures prices: https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm and https://www.eia.gov/dnav/pet/pet_pri_fut_s1_d.htm
 - EIA refinery capacity report: https://www.eia.gov/petroleum/refinerycapacity/
+- EIA weekly stocks and exports, and monthly imports from Venezuela and Mexico (series WDISTUS1, WGTSTUS1, WDIEXUS2, W_EPM0F_EEX_NUS-Z00_MBBLD, MCRIMUSVE2, MCRIMUSMX2): spreadsheet downloads at https://www.eia.gov/dnav/pet/hist_xls/
 - US Census Bureau international trade API: https://api.census.gov/data/timeseries/intltrade/imports/hs
 - Treasury OFAC Venezuela general licences: https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions
 - Federal Register API (earlier licence versions): https://www.federalregister.gov/developers/documentation/api/v1
@@ -61,7 +67,9 @@ Venezuela and Kuwait
 
 ## Things to be careful with
 
-- The 2027 and 2028 crack inputs come from one day's settlements, November 25.
+- The 2027 and 2028 crack inputs come from one day's settlements, November 25. Most 2028 gasoline months didn't trade that day, so those settlements are CME's marks. data/ny211_strip_daily_2026-11.csv holds my calendar-year averages for five days, not CME's raw settlements.
+- The hedge check is one week. It shows the stock moving with the deferred crack, nothing more.
+- The 2019 comparison isn't clean. Saudi and Canadian production cuts were tightening heavy supply at the same time, and Mexico was sending far more crude to the Gulf than it does now.
 - Houston restart capex is an analyst estimate. Valero hasn't disclosed it.
 - The Kuwait quality model is rough. Its typical miss is $5.65 a barrel, so the $8.01 is a lead, not proof.
 - The event study is one event. The placebo windows tell you how unusual it was, not why.
