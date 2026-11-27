@@ -27,6 +27,7 @@ Valuation and the Street
 - comps.py: the peer multiples.
 - payout_framework.py: Valero's payout on its own framework. 52% gives 2027 EPS of $44.78; holding cash at $9.8bn gives $47.50; running cash down to the $5bn floor gives $49.43.
 - houston_restart.py: Houston valued on its own, $5.39 a share at $700m of restart capex.
+- q4_forecast.py: the Q4 2026 call, $18.23 adjusted EPS, range $17.28 to $19.19, from the Gulf Coast crack quarter to date. Run it with --refresh to pull EIA's latest prices.
 - q4_model_bias.py: my quarterly model has never come in below consensus in nine clean quarters. Median error +$0.21 a share.
 
 Venezuela and Kuwait
