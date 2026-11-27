@@ -34,7 +34,7 @@ Venezuela and Kuwait
 
 - venezuela_exposure.py: who imports Venezuelan crude and how much of each plant it is (Valero 255,000 b/d; 39% of Port Arthur, 37% of St. Charles).
 - heavy_discount_landed.py: landed discounts by grade ($8.36 Venezuela, $5.69 Maya, $11.97 Bow River under WTI in 2026).
-- venezuela_controls.py: the regression of heavy discounts on Venezuelan volumes. No detectable effect, wide range.
+- venezuela_controls.py: the regression of heavy discounts on Venezuelan volumes. No detectable effect on its own, but it leaves out Persian Gulf supply; see sour_drivers.py.
 - venezuela_event_study.py, venezuela_event_study_crack.py, prices.py: the market reaction after January 3, with placebo windows. The second script is the one in the piece.
 - kuwait_test.py: EIA's Persian Gulf landed cost against Brent.
 - kuwait_quality_adjusted.py: Kuwait's August cargoes against what their gravity and sulfur say they should cost ($8.01 cheap; Saudi $0.75).
@@ -46,6 +46,7 @@ Venezuela and Kuwait
 - canada_substitute.py: Canadian crude reaching Gulf Coast refineries by month, and Canadian entries at Gulf customs districts.
 - canada_tmx.py: splits that Canadian crude by where it entered the US. The whole drop since 2024 is pipeline barrels from the northern border (366,000 to 95,000 b/d). 129,000 went by 2025, which is Trans Mountain; 142,000 went in 2026 as Venezuelan crude arrived, and that part could come back.
 - sanctions_2019.py: the 2019 natural experiment. Venezuelan imports went from 505,000 b/d in 2018 to nothing by mid-2019, and Valero's Brent less Maya went from $4.76 to an average $5.57. Also the 2025-26 Maya discount against Venezuelan barrels, and the $2.28 a share cost if Maya went back to its 2025 average.
+- sour_drivers.py: whether Maya's discount follows Venezuela or the Persian Gulf. On its own, Venezuela shows no clear effect. With Persian Gulf imports added to the controls, each 100,000 b/d of Venezuelan crude widens Maya's discount by about $0.83 (Gulf crude about $0.74), so losing August's 655,000 b/d would narrow it by about $5.42 (95% range $0.44 to $10.39), about $3.74 a share a year for Valero with the direct cost. I missed this in my first test, which left the Gulf out.
 - gulf_heavy_supply.py: Venezuelan, Mexican and Canadian pipeline crude into Gulf Coast refineries by year. Mexico fell from 626,000 b/d in 2023 to 246,000 in 2026.
 - segments_detail.py: Diamond Green Diesel and ethanol. The margins the model implies ($1.30 and $0.77 a gallon), and what $0.10 a gallon is worth ($0.17 and $0.48 a share).
 - census_all_origins.py, census_crude_by_district.py: the Census customs pulls. These need your own Census API key in data/census_key.txt. The key is free from the Census Bureau. Mine isn't in here.
@@ -70,6 +71,7 @@ Venezuela and Kuwait
 
 - The 2027 and 2028 crack inputs come from one day's settlements, November 25. Most 2028 gasoline months didn't trade that day, so those settlements are CME's marks. data/ny211_strip_daily_2026-11.csv holds my calendar-year averages for five days, not CME's raw settlements.
 - The hedge check is one week. It shows the stock moving with the deferred crack, nothing more.
+- The Venezuela-plus-Gulf regression explains about a fifth of the monthly moves, and EIA landed costs lag spot prices, which mattered while Brent swung in 2026. US imports from the Gulf stand in for Gulf supply.
 - The 2019 comparison isn't clean. Saudi and Canadian production cuts were tightening heavy supply at the same time, and Mexico was sending far more crude to the Gulf than it does now.
 - Houston restart capex is an analyst estimate. Valero hasn't disclosed it.
 - The Kuwait quality model is rough. Its typical miss is $5.65 a barrel, so the $8.01 is a lead, not proof.
@@ -81,4 +83,4 @@ Venezuela and Kuwait
 
 ## Corrections
 
-None so far.
+- November 27, 2026, before publication: an earlier draft said this year's data didn't tie heavy discounts to Venezuela. Once Persian Gulf supply is controlled for, they do (sour_drivers.py).
