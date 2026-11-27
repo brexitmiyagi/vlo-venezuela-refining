@@ -37,6 +37,7 @@ Venezuela and Kuwait
 - venezuela_event_study.py, venezuela_event_study_crack.py, prices.py: the market reaction after January 3, with placebo windows. The second script is the one in the piece.
 - kuwait_test.py: EIA's Persian Gulf landed cost against Brent.
 - kuwait_quality_adjusted.py: Kuwait's August cargoes against what their gravity and sulfur say they should cost ($8.01 cheap; Saudi $0.75).
+- crack_cycles.py: annual NY Harbor 2-1-1 since 2007 and what happened the year after peaks. After top-quarter years the next-year change averaged -$6.78 (-16%); the curve has 2028 $9.50 (21%) below 2027.
 - licence_history.py: compares every version of Treasury's general licences 46, 50 and 52 word by word, using the Federal Register text. My reading of each change is in data/ofac_licence_history.csv: nine of eleven rewrites loosened the terms, none tightened the crude trade.
 - peer_heavy_exposure.py: imported heavy crude by refiner and what a $1 wider heavy discount is worth per share (Valero 0.11% of its price, PBF 0.77%).
 - canada_substitute.py: Canadian crude reaching Gulf Coast refineries (down from about 526,000 b/d in 2024 to 329,000 in 2026) and seaborne Canadian entries at Gulf ports.
